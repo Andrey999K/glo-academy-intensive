@@ -15,6 +15,7 @@ body {
 .navbar {
     max-width: 870px;
     width: 100%;
+    padding-top: 40px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -81,7 +82,7 @@ body {
 }
 
 .social__icon {
-    max-width: 30px;
+    max-width: 24px;
 }
 
 .header-links {
@@ -255,6 +256,14 @@ body {
 
 .feedback {
     padding: 80px 0 160px;
+    position: relative;
+}
+
+.feedback-hand {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 25%;
 }
 
 .input-group {
@@ -276,7 +285,7 @@ body {
 .input {
     border: 3px solid #e0dedc;
     border-radius: 4px;
-    width: 435px;
+    width: 100%;
     height: 56px;
 }
 
@@ -301,4 +310,114 @@ body {
 .button-group {
     display: flex;
     justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 760px;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    .container {
+        max-width: 576px;
+    }
+
+    .header-photo {
+        max-width: 150px;
+    }
+
+    .header-strong {
+        font-size: 36px;
+    }
+
+    .header-heading {
+        font-size: 18px;
+    }
+
+    .cv-button {
+        margin-left: 15px;
+    }
+
+    .card {
+        max-width: 45%;
+    }
+
+    .card-text-wrapper {
+        padding: 8px 0;
+    }
+
+    .developer {
+        flex-direction: column;
+    }
+
+    .developer-photo {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .developer-about {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .feedback-hand {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .header {
+        padding-top: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-links, .cards, .navbar {
+        flex-direction: column;
+    }
+
+    .cv-download {
+        margin-left: 0;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .form-container {
+        width: 90%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
 }
